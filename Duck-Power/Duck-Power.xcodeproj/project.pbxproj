@@ -412,6 +412,7 @@
 				56C43E5A1ED21FB60023F067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56C43E5B1ED21FB60023F067 /* Build configuration list for PBXNativeTarget "Duck-PowerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				56C43E5D1ED21FB60023F067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
