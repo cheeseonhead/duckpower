@@ -11,32 +11,23 @@ import Foundation
 
 class AnimatedImageView: UIImageView
 {
+    var autoReverse = false
     var series: [UIImage] = []
-    var interval: Double = 0.5
-    
-    fileprivate var currentIndex = 0
-    
-    func add(image: UIImage)
-    {
-        series.append(image)
-    }
     
     func animate()
     {
-        UIView.animate(withDuration: 0.5, delay: 0, options: [.repeat], animations: { 
-            self.advanceImage()
-        }, completion: nil)
+        startAnimating()
     }
     
-    func stopAnimate()
+    override func startAnimating()
     {
-        layer.removeAllAnimations()
-    }
-    
-    func advanceImage()
-    {
-        let newIndex = (currentIndex + 1) % series.count
+        if(autoReverse) {
+            animationImages = series + series[1...(series.count - 2)].reversed()
+        }
+        else {
+            animationImages = series
+        }
         
-        image = series[newIndex]
+        super.startAnimating()
     }
 }

@@ -22,10 +22,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck2" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
                                 <rect key="frame" x="48" y="64" width="49" height="58"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck2" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
                                 <rect key="frame" x="152" y="79" width="49" height="58"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beB-7i-5g3">
@@ -44,6 +44,9 @@
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outletCollection property="dancingDuckViews" destination="GYh-SA-L9H" collectionClass="NSMutableArray" id="fPc-hM-Wfc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +55,6 @@
     </scenes>
     <resources>
         <image name="QuestionButton" width="36" height="38"/>
-        <image name="duck2" width="49" height="58"/>
+        <image name="duck1" width="49" height="58"/>
     </resources>
 </document>

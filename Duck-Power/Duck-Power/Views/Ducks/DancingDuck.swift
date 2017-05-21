@@ -11,10 +11,18 @@ class DancingDuck: AnimatedImageView
     override init(frame: CGRect)
     {
         super .init(frame: frame)
-        series = [#imageLiteral(resourceName: "duck1"), #imageLiteral(resourceName: "duck2"), #imageLiteral(resourceName: "duck3")]
+        didLoad()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        didLoad()
+    }
+    
+    func didLoad()
+    {
+        series = [#imageLiteral(resourceName: "duck1"), #imageLiteral(resourceName: "duck2"), #imageLiteral(resourceName: "duck3")]
+        autoReverse = true
+        animationDuration = 1
     }
 }
