@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,35 +24,39 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                <rect key="frame" x="48" y="64" width="49" height="58"/>
+                                <rect key="frame" x="44" y="64" width="50" height="59"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                <rect key="frame" x="152" y="79" width="49" height="58"/>
+                                <rect key="frame" x="149" y="79" width="50" height="59"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beB-7i-5g3">
-                                <rect key="frame" x="335" y="79" width="36" height="38"/>
+                                <rect key="frame" x="244" y="79" width="37" height="39"/>
                                 <state key="normal" image="QuestionButton"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="700" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
-                                <rect key="frame" x="65.666666666666657" y="159.66666666666666" width="91.999999999999972" height="74"/>
+                                <rect key="frame" x="18.5" y="160.5" width="92" height="74"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-l0-NEW">
-                                <rect key="frame" x="157.66666666666666" y="156.66666666666666" width="63" height="73"/>
+                                <rect key="frame" x="110.5" y="157.5" width="63" height="73"/>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-holding-arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-4b-Dof">
+                                <rect key="frame" x="120" y="262" width="80" height="69"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.38823529411764707" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ShN-l0-NEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-18" id="01t-qx-2GS"/>
+                            <constraint firstItem="ho7-4b-Dof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5vi-Xm-RIO"/>
                             <constraint firstItem="ShN-l0-NEW" firstAttribute="leading" secondItem="aeI-B7-tHt" secondAttribute="trailing" id="CaZ-vy-a5E"/>
                             <constraint firstItem="ShN-l0-NEW" firstAttribute="top" secondItem="C0V-GH-n1m" secondAttribute="bottom" constant="19.5" id="DFo-Fv-e2H"/>
                             <constraint firstAttribute="trailingMargin" secondItem="beB-7i-5g3" secondAttribute="trailing" constant="23" id="DFu-L3-Uj7"/>
@@ -61,6 +65,7 @@
                             <constraint firstItem="GYh-SA-L9H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="aCs-eg-PZt"/>
                             <constraint firstItem="C0V-GH-n1m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="j3j-zJ-Y1K"/>
                             <constraint firstItem="GYh-SA-L9H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="mY9-7S-HQF"/>
+                            <constraint firstItem="ho7-4b-Dof" firstAttribute="top" secondItem="ShN-l0-NEW" secondAttribute="bottom" constant="31.333333333333343" id="tI7-rg-dih"/>
                             <constraint firstItem="beB-7i-5g3" firstAttribute="top" secondItem="C0V-GH-n1m" secondAttribute="top" id="z7o-4B-dkN"/>
                         </constraints>
                     </view>
@@ -76,7 +81,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="QuestionButton" width="36" height="38"/>
-        <image name="duck1" width="49" height="58"/>
+        <image name="QuestionButton" width="37" height="39"/>
+        <image name="duck-holding-arrow1" width="80" height="69"/>
+        <image name="duck1" width="50" height="59"/>
     </resources>
 </document>
