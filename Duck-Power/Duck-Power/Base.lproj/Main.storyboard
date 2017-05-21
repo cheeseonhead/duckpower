@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -25,27 +25,27 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppc-T0-iQe" userLabel="Center Holder">
-                                <rect key="frame" x="20.666666666666657" y="197.33333333333331" width="373.33333333333337" height="321.66666666666669"/>
+                                <rect key="frame" x="16.5" y="113" width="287.5" height="322"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-holding-arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-4b-Dof" customClass="DuckHoldingArrowView" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="147" y="105.99999999999997" width="80" height="69"/>
+                                        <rect key="frame" x="104" y="106" width="80" height="69"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="-24" translatesAutoresizingMaskIntoConstraints="NO" id="C3M-7a-wjV">
-                                        <rect key="frame" x="97" y="198.99999999999997" width="275.33333333333331" height="122.66666666666666"/>
+                                        <rect key="frame" x="11" y="199" width="275.5" height="123"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi8-7n-JXY">
-                                                <rect key="frame" x="148.66666666666663" y="0.0" width="126.66666666666669" height="73.333333333333371"/>
+                                                <rect key="frame" x="148.5" y="0.0" width="127" height="73.5"/>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duckpower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-bj-h81">
-                                                <rect key="frame" x="0.0" y="49.333333333333371" width="275.33333333333331" height="73.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="275.5" height="73.5"/>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <color key="textColor" red="0.99607843137254903" green="0.83137254901960778" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,16 +54,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fih-gO-fVf">
-                                        <rect key="frame" x="0.0" y="0.0" width="229.66666666666669" height="73.999999999999972"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="74"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="99999" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
-                                                <rect key="frame" x="0.0" y="0.0" width="167" height="73.999999999999972"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="74"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <action selector="numberChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="8an-6N-hUo"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Jtb-Ls-5kd"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-l0-NEW">
-                                                <rect key="frame" x="167" y="0.0" width="62.666666666666686" height="73.999999999999972"/>
+                                                <rect key="frame" x="167" y="0.0" width="63" height="74"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -82,17 +86,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcN-aC-1CC" userLabel="Top Holder">
-                                <rect key="frame" x="20" y="0.0" width="374" height="197.33333333333334"/>
+                                <rect key="frame" x="16" y="0.0" width="288" height="113"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="65.333333333333329" width="49" height="58"/>
+                                        <rect key="frame" x="30" y="22" width="50" height="59"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beB-7i-5g3">
-                                        <rect key="frame" x="338" y="80.333333333333329" width="36" height="38"/>
+                                        <rect key="frame" x="251" y="37" width="37" height="39"/>
                                         <state key="normal" image="QuestionButton"/>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="134" y="84.333333333333343" width="49" height="58.000000000000028"/>
+                                        <rect key="frame" x="135" y="41" width="50" height="59"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -105,13 +109,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XW-QL-A8I" userLabel="Bottom Holder">
-                                <rect key="frame" x="0.0" y="519" width="414" height="172"/>
+                                <rect key="frame" x="0.0" y="435" width="320" height="133"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xo7-d7-XDt">
-                                        <rect key="frame" x="127.66666666666669" y="26" width="228" height="120"/>
+                                        <rect key="frame" x="80.5" y="6.5" width="228" height="120"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="PWx-uc-eGT" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
-                                                <rect key="frame" x="85.999999999999986" y="0.0" width="56.000000000000014" height="70"/>
+                                                <rect key="frame" x="86" y="0.0" width="56" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="56" id="G6l-o8-mWk"/>
                                                     <constraint firstAttribute="height" constant="70" id="buv-Os-yEA"/>
@@ -125,7 +129,7 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-IB-xhI" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="24" width="77.999999999999986" height="96"/>
+                                                <rect key="frame" x="0.0" y="24" width="78" height="96"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="96" id="cYT-JG-2H1"/>
                                                     <constraint firstAttribute="width" constant="78" id="jIU-pR-4hv"/>
@@ -167,6 +171,7 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="duckPowerNumberLabel" destination="Wi8-7n-JXY" id="Yak-zx-Rb9"/>
                         <outletCollection property="duckViews" destination="ho7-4b-Dof" collectionClass="NSMutableArray" id="V24-Dh-epb"/>
                         <outletCollection property="duckViews" destination="GYh-SA-L9H" collectionClass="NSMutableArray" id="R1L-c7-rWL"/>
                         <outletCollection property="duckViews" destination="C0V-GH-n1m" collectionClass="NSMutableArray" id="34b-ZB-581"/>
@@ -181,9 +186,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="QuestionButton" width="36" height="38"/>
+        <image name="QuestionButton" width="37" height="39"/>
         <image name="duck-holding-arrow1" width="80" height="69"/>
         <image name="duck-tilting-head1" width="78" height="94"/>
-        <image name="duck1" width="49" height="58"/>
+        <image name="duck1" width="50" height="59"/>
     </resources>
 </document>

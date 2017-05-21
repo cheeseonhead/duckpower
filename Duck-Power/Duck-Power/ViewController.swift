@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var duckViews: [AnimatedImageView]!
+    @IBOutlet weak var duckPowerNumberLabel: UILabel!
     
     override func viewDidAppear(_ animated: Bool) {
         for duckView in duckViews
@@ -18,5 +19,24 @@ class ViewController: UIViewController {
             duckView.animate()
         }
     }
+    
+    @IBAction func numberChanged(_ sender: UITextField)
+    {
+        guard let text = sender.text,
+        let horsePower = Int(text) else {
+            return
+        }
+        
+        duckPowerNumberLabel.text = "\(horsePower * 40)"
+    }
 }
 
+extension ViewController: UITextFieldDelegate
+{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let maxLength = 5
+        let currentString: NSString = textField.text! as NSString
+        let newString: String = currentString.replacingCharacters(in: range, with: string)
+        return newString.characters.count <= maxLength
+    }
+}
