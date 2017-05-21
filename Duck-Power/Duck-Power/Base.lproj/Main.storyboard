@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="impact.ttf">
+            <string>Impact</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -32,10 +37,26 @@
                                 <rect key="frame" x="335" y="79" width="36" height="38"/>
                                 <state key="normal" image="QuestionButton"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="700" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
+                                <rect key="frame" x="65.666666666666657" y="159.66666666666666" width="91.999999999999972" height="74"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-l0-NEW">
+                                <rect key="frame" x="157.66666666666666" y="156.66666666666666" width="63" height="73"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.38823529411764707" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ShN-l0-NEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-18" id="01t-qx-2GS"/>
+                            <constraint firstItem="ShN-l0-NEW" firstAttribute="leading" secondItem="aeI-B7-tHt" secondAttribute="trailing" id="CaZ-vy-a5E"/>
+                            <constraint firstItem="ShN-l0-NEW" firstAttribute="top" secondItem="C0V-GH-n1m" secondAttribute="bottom" constant="19.5" id="DFo-Fv-e2H"/>
                             <constraint firstAttribute="trailingMargin" secondItem="beB-7i-5g3" secondAttribute="trailing" constant="23" id="DFu-L3-Uj7"/>
+                            <constraint firstItem="ShN-l0-NEW" firstAttribute="baseline" secondItem="aeI-B7-tHt" secondAttribute="baseline" id="OAj-XA-aHq"/>
                             <constraint firstItem="C0V-GH-n1m" firstAttribute="leading" secondItem="GYh-SA-L9H" secondAttribute="trailing" constant="55" id="Q5R-Lj-ahH"/>
                             <constraint firstItem="GYh-SA-L9H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="aCs-eg-PZt"/>
                             <constraint firstItem="C0V-GH-n1m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="j3j-zJ-Y1K"/>
@@ -51,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="31.884057971014496" y="37.5"/>
         </scene>
     </scenes>
     <resources>

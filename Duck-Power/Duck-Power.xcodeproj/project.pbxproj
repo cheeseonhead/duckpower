@@ -15,6 +15,7 @@
 		56C43E541ED21FB60023F067 /* Duck_PowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E531ED21FB60023F067 /* Duck_PowerTests.swift */; };
 		8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405C50460C518D92A5C9763 /* AnimatedImageView.swift */; };
 		8405C87FB0DD85D7FC5B8B4B /* DancingDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405C1C72445113EEABEB912 /* DancingDuck.swift */; };
+		8405CBC661C59F54CCAD4B9C /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8405CA927E82B1C3A94E4B13 /* impact.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		56C43E551ED21FB60023F067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8405C1C72445113EEABEB912 /* DancingDuck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DancingDuck.swift; sourceTree = "<group>"; };
 		8405C50460C518D92A5C9763 /* AnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		8405CA927E82B1C3A94E4B13 /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = impact.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				56C43E471ED21FB60023F067 /* LaunchScreen.storyboard */,
 				56C43E4A1ED21FB60023F067 /* Info.plist */,
 				8405C050BBCEDAA4B695C05E /* Views */,
+				8405C94FD4846852AFF9B173 /* Assets */,
 			);
 			path = "Duck-Power";
 			sourceTree = "<group>";
@@ -108,6 +111,14 @@
 				8405CD9545D0960B7388F52A /* Ducks */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8405C94FD4846852AFF9B173 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8405CA927E82B1C3A94E4B13 /* impact.ttf */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		8405CD9545D0960B7388F52A /* Ducks */ = {
@@ -206,6 +217,7 @@
 				56C43E491ED21FB60023F067 /* LaunchScreen.storyboard in Resources */,
 				56C43E461ED21FB60023F067 /* Assets.xcassets in Resources */,
 				56C43E441ED21FB60023F067 /* Main.storyboard in Resources */,
+				8405CBC661C59F54CCAD4B9C /* impact.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
