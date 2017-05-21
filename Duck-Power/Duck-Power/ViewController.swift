@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet var duckViews: [AnimatedImageView]!
     @IBOutlet weak var duckPowerNumberLabel: UILabel!
     
+    override func viewDidLoad()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         for duckView in duckViews
         {
@@ -38,5 +46,13 @@ extension ViewController: UITextFieldDelegate
         let currentString: NSString = textField.text! as NSString
         let newString: String = currentString.replacingCharacters(in: range, with: string)
         return newString.characters.count <= maxLength
+    }
+}
+
+extension ViewController
+{
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
     }
 }
