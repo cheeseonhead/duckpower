@@ -12,6 +12,8 @@ class DuckTiltingHead: AnimatedImageView
 {
     override func didLoad()
     {
-        series = []
+        series = [#imageLiteral(resourceName: "duck-tilting-head1"), #imageLiteral(resourceName: "duck-tilting-head2"), #imageLiteral(resourceName: "duck-tilting-head3"), #imageLiteral(resourceName: "duck-tilting-head4"), #imageLiteral(resourceName: "duck-tilting-head5")]
+        autoReverse = true
+        animationDuration = 1
     }
 }
