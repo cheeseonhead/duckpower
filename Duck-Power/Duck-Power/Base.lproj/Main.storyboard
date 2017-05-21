@@ -46,6 +46,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outletCollection property="dancingDuckViews" destination="GYh-SA-L9H" collectionClass="NSMutableArray" id="fPc-hM-Wfc"/>
+                        <outletCollection property="dancingDuckViews" destination="C0V-GH-n1m" collectionClass="NSMutableArray" id="mqV-Bp-xjB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
