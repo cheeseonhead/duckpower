@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class AnimatedImageView: UImageView
+{
+    var series: [UIImage] = []
+    
+    
+}
