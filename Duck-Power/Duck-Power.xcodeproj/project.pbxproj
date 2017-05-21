@@ -14,6 +14,7 @@
 		56C43E491ED21FB60023F067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C43E471ED21FB60023F067 /* LaunchScreen.storyboard */; };
 		56C43E541ED21FB60023F067 /* Duck_PowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E531ED21FB60023F067 /* Duck_PowerTests.swift */; };
 		8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405C50460C518D92A5C9763 /* AnimatedImageView.swift */; };
+		8405C87FB0DD85D7FC5B8B4B /* DancingDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405C1C72445113EEABEB912 /* DancingDuck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		56C43E4F1ED21FB60023F067 /* Duck-PowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duck-PowerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C43E531ED21FB60023F067 /* Duck_PowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck_PowerTests.swift; sourceTree = "<group>"; };
 		56C43E551ED21FB60023F067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8405C1C72445113EEABEB912 /* DancingDuck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DancingDuck.swift; sourceTree = "<group>"; };
 		8405C50460C518D92A5C9763 /* AnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,8 +105,17 @@
 			isa = PBXGroup;
 			children = (
 				8405C50460C518D92A5C9763 /* AnimatedImageView.swift */,
+				8405CD9545D0960B7388F52A /* Ducks */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8405CD9545D0960B7388F52A /* Ducks */ = {
+			isa = PBXGroup;
+			children = (
+				8405C1C72445113EEABEB912 /* DancingDuck.swift */,
+			);
+			path = Ducks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				56C43E411ED21FB60023F067 /* ViewController.swift in Sources */,
 				56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */,
 				8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */,
+				8405C87FB0DD85D7FC5B8B4B /* DancingDuck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
