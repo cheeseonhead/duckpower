@@ -14,6 +14,17 @@ class AnimatedImageView: UIImageView
     var autoReverse = false
     var series: [UIImage] = []
     
+    override init(frame: CGRect)
+    {
+        super .init(frame: frame)
+        didLoad()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        didLoad()
+    }
+    
     func animate()
     {
         startAnimating()
@@ -29,5 +40,9 @@ class AnimatedImageView: UIImageView
         }
         
         super.startAnimating()
+    }
+    
+    func didLoad()
+    {
     }
 }

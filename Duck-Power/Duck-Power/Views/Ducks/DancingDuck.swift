@@ -8,18 +8,7 @@ import UIKit
 
 class DancingDuck: AnimatedImageView
 {
-    override init(frame: CGRect)
-    {
-        super .init(frame: frame)
-        didLoad()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        didLoad()
-    }
-    
-    func didLoad()
+    override func didLoad()
     {
         series = [#imageLiteral(resourceName: "duck1"), #imageLiteral(resourceName: "duck2"), #imageLiteral(resourceName: "duck3")]
         autoReverse = true

@@ -9,11 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var dancingDuckViews: [DancingDuck]!
+    
+    @IBOutlet var duckViews: [AnimatedImageView]!
     
     override func viewDidAppear(_ animated: Bool) {
-        for duckView in dancingDuckViews
+        for duckView in duckViews
         {
             duckView.animate()
         }

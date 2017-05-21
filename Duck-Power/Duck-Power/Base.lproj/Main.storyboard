@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,55 +24,109 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                <rect key="frame" x="44" y="64" width="50" height="59"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                <rect key="frame" x="149" y="79" width="50" height="59"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beB-7i-5g3">
-                                <rect key="frame" x="244" y="79" width="37" height="39"/>
-                                <state key="normal" image="QuestionButton"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="700" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
-                                <rect key="frame" x="18.5" y="160.5" width="92" height="74"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-l0-NEW">
-                                <rect key="frame" x="110.5" y="157.5" width="63" height="73"/>
-                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-holding-arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-4b-Dof">
-                                <rect key="frame" x="120" y="262" width="80" height="69"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppc-T0-iQe" userLabel="Center Holder">
+                                <rect key="frame" x="20.666666666666657" y="198.33333333333337" width="373.33333333333337" height="339.33333333333326"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-holding-arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-4b-Dof" customClass="DuckHoldingArrowView" customModule="Duck_Power" customModuleProvider="target">
+                                        <rect key="frame" x="147" y="105.66666666666666" width="80" height="69"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="-24" translatesAutoresizingMaskIntoConstraints="NO" id="C3M-7a-wjV">
+                                        <rect key="frame" x="97" y="215.99999999999997" width="275.33333333333331" height="122.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi8-7n-JXY">
+                                                <rect key="frame" x="148.66666666666663" y="0.0" width="126.66666666666669" height="73.333333333333371"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duckpower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-bj-h81">
+                                                <rect key="frame" x="0.0" y="49.333333333333371" width="275.33333333333331" height="73.333333333333314"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
+                                                <color key="textColor" red="0.99607843137254903" green="0.83137254901960778" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fih-gO-fVf">
+                                        <rect key="frame" x="0.0" y="0.0" width="229.66666666666669" height="73.999999999999972"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="99999" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="73.999999999999972"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-l0-NEW">
+                                                <rect key="frame" x="167" y="0.0" width="62.666666666666686" height="73.999999999999972"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="C3M-7a-wjV" secondAttribute="bottom" constant="0.33333333333325754" id="97J-lJ-den"/>
+                                    <constraint firstItem="ho7-4b-Dof" firstAttribute="top" secondItem="fih-gO-fVf" secondAttribute="bottom" constant="31.333333333333329" id="UwL-Ng-tic"/>
+                                    <constraint firstItem="fih-gO-fVf" firstAttribute="leading" secondItem="Ppc-T0-iQe" secondAttribute="leading" id="W2v-JG-PT4"/>
+                                    <constraint firstItem="ho7-4b-Dof" firstAttribute="centerX" secondItem="Ppc-T0-iQe" secondAttribute="centerX" id="XXA-T1-Qcs"/>
+                                    <constraint firstItem="fih-gO-fVf" firstAttribute="top" secondItem="Ppc-T0-iQe" secondAttribute="top" id="dcO-rO-f6g"/>
+                                    <constraint firstItem="C3M-7a-wjV" firstAttribute="top" secondItem="ho7-4b-Dof" secondAttribute="bottom" constant="41.333333333333314" id="g2Y-NR-LY5"/>
+                                    <constraint firstAttribute="trailing" secondItem="C3M-7a-wjV" secondAttribute="trailing" constant="1" id="zzL-4d-xKS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcN-aC-1CC" userLabel="Top Holder">
+                                <rect key="frame" x="20" y="0.0" width="374" height="198.33333333333334"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="65" width="49" height="58"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beB-7i-5g3">
+                                        <rect key="frame" x="338" y="80" width="36" height="38"/>
+                                        <state key="normal" image="QuestionButton"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
+                                        <rect key="frame" x="134" y="84" width="49" height="58"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="beB-7i-5g3" firstAttribute="centerY" secondItem="EcN-aC-1CC" secondAttribute="centerY" id="1Ae-0P-uWn"/>
+                                    <constraint firstItem="C0V-GH-n1m" firstAttribute="centerY" secondItem="EcN-aC-1CC" secondAttribute="centerY" constant="14" id="44T-cH-lh9"/>
+                                    <constraint firstItem="GYh-SA-L9H" firstAttribute="centerY" secondItem="C0V-GH-n1m" secondAttribute="centerY" constant="-19" id="8qH-qU-BAU"/>
+                                    <constraint firstAttribute="trailing" secondItem="beB-7i-5g3" secondAttribute="trailing" id="Vbm-Xo-u3u"/>
+                                    <constraint firstItem="C0V-GH-n1m" firstAttribute="leading" secondItem="GYh-SA-L9H" secondAttribute="trailing" constant="55" id="WJd-Xx-0lO"/>
+                                    <constraint firstItem="GYh-SA-L9H" firstAttribute="leading" secondItem="EcN-aC-1CC" secondAttribute="leading" constant="30" id="l9Z-2t-dXp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XW-QL-A8I">
+                                <rect key="frame" x="0.0" y="537.66666666666652" width="414" height="198.33333333333337"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.38823529411764707" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ShN-l0-NEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-18" id="01t-qx-2GS"/>
-                            <constraint firstItem="ho7-4b-Dof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5vi-Xm-RIO"/>
-                            <constraint firstItem="ShN-l0-NEW" firstAttribute="leading" secondItem="aeI-B7-tHt" secondAttribute="trailing" id="CaZ-vy-a5E"/>
-                            <constraint firstItem="ShN-l0-NEW" firstAttribute="top" secondItem="C0V-GH-n1m" secondAttribute="bottom" constant="19.5" id="DFo-Fv-e2H"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="beB-7i-5g3" secondAttribute="trailing" constant="23" id="DFu-L3-Uj7"/>
-                            <constraint firstItem="ShN-l0-NEW" firstAttribute="baseline" secondItem="aeI-B7-tHt" secondAttribute="baseline" id="OAj-XA-aHq"/>
-                            <constraint firstItem="C0V-GH-n1m" firstAttribute="leading" secondItem="GYh-SA-L9H" secondAttribute="trailing" constant="55" id="Q5R-Lj-ahH"/>
-                            <constraint firstItem="GYh-SA-L9H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="aCs-eg-PZt"/>
-                            <constraint firstItem="C0V-GH-n1m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="j3j-zJ-Y1K"/>
-                            <constraint firstItem="GYh-SA-L9H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="mY9-7S-HQF"/>
-                            <constraint firstItem="ho7-4b-Dof" firstAttribute="top" secondItem="ShN-l0-NEW" secondAttribute="bottom" constant="31.333333333333343" id="tI7-rg-dih"/>
-                            <constraint firstItem="beB-7i-5g3" firstAttribute="top" secondItem="C0V-GH-n1m" secondAttribute="top" id="z7o-4B-dkN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ppc-T0-iQe" secondAttribute="trailing" id="LyD-8P-FCu"/>
+                            <constraint firstItem="1XW-QL-A8I" firstAttribute="top" secondItem="Ppc-T0-iQe" secondAttribute="bottom" id="Q7d-RW-kco"/>
+                            <constraint firstItem="Ppc-T0-iQe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RWa-9L-R9V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EcN-aC-1CC" secondAttribute="trailing" id="U8A-Wv-hNj"/>
+                            <constraint firstItem="EcN-aC-1CC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UvE-wm-JL2"/>
+                            <constraint firstItem="1XW-QL-A8I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gab-cr-XWf"/>
+                            <constraint firstAttribute="trailing" secondItem="1XW-QL-A8I" secondAttribute="trailing" id="qQq-wz-15W"/>
+                            <constraint firstItem="Ppc-T0-iQe" firstAttribute="top" secondItem="EcN-aC-1CC" secondAttribute="bottom" id="qxe-IE-qyv"/>
+                            <constraint firstAttribute="bottom" secondItem="1XW-QL-A8I" secondAttribute="bottom" id="sbJ-Oh-j0O"/>
+                            <constraint firstItem="EcN-aC-1CC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="t7R-8x-ojf"/>
+                            <constraint firstItem="Ppc-T0-iQe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="0.66666666666665719" id="yHr-5F-zVU"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outletCollection property="dancingDuckViews" destination="GYh-SA-L9H" collectionClass="NSMutableArray" id="fPc-hM-Wfc"/>
-                        <outletCollection property="dancingDuckViews" destination="C0V-GH-n1m" collectionClass="NSMutableArray" id="mqV-Bp-xjB"/>
+                        <outletCollection property="duckViews" destination="ho7-4b-Dof" collectionClass="NSMutableArray" id="V24-Dh-epb"/>
+                        <outletCollection property="duckViews" destination="GYh-SA-L9H" collectionClass="NSMutableArray" id="R1L-c7-rWL"/>
+                        <outletCollection property="duckViews" destination="C0V-GH-n1m" collectionClass="NSMutableArray" id="34b-ZB-581"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,8 +135,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="QuestionButton" width="37" height="39"/>
+        <image name="QuestionButton" width="36" height="38"/>
         <image name="duck-holding-arrow1" width="80" height="69"/>
-        <image name="duck1" width="50" height="59"/>
+        <image name="duck1" width="49" height="58"/>
     </resources>
 </document>

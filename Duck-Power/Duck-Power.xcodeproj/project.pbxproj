@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56C377E21ED246D70049D1A1 /* DuckHoldingArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E11ED246D70049D1A1 /* DuckHoldingArrowView.swift */; };
+		56C377E41ED2518C0049D1A1 /* DuckTiltingHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */; };
 		56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E3E1ED21FB60023F067 /* AppDelegate.swift */; };
 		56C43E411ED21FB60023F067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E401ED21FB60023F067 /* ViewController.swift */; };
 		56C43E441ED21FB60023F067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C43E421ED21FB60023F067 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56C377E11ED246D70049D1A1 /* DuckHoldingArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckHoldingArrowView.swift; sourceTree = "<group>"; };
+		56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckTiltingHead.swift; sourceTree = "<group>"; };
 		56C43E3B1ED21FB60023F067 /* Duck-Power.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck-Power.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C43E3E1ED21FB60023F067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C43E401ED21FB60023F067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				8405C1C72445113EEABEB912 /* DancingDuck.swift */,
+				56C377E11ED246D70049D1A1 /* DuckHoldingArrowView.swift */,
+				56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */,
 			);
 			path = Ducks;
 			sourceTree = "<group>";
@@ -235,9 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C377E21ED246D70049D1A1 /* DuckHoldingArrowView.swift in Sources */,
 				56C43E411ED21FB60023F067 /* ViewController.swift in Sources */,
 				56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */,
 				8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */,
+				56C377E41ED2518C0049D1A1 /* DuckTiltingHead.swift in Sources */,
 				8405C87FB0DD85D7FC5B8B4B /* DancingDuck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
