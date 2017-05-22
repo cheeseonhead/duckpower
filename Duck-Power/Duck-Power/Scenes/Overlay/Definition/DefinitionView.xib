@@ -28,7 +28,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lh-hp-b0t">
-                    <rect key="frame" x="0.0" y="66" width="351" height="45"/>
+                    <rect key="frame" x="18" y="66" width="315" height="45"/>
                     <string key="text">a unit of power equal to 20,000 foot
 -pounds per second. (29828 watts).</string>
                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
@@ -39,15 +39,13 @@
                     <rect key="frame" x="116" y="131" width="119" height="82"/>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="1Lh-hp-b0t" secondAttribute="trailing" id="0le-P1-PBc"/>
+                <constraint firstItem="1Lh-hp-b0t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8cy-cV-lob"/>
                 <constraint firstItem="RDE-Wk-OYm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9T0-9C-lWn"/>
                 <constraint firstAttribute="bottom" secondItem="6zt-EF-g7I" secondAttribute="bottom" id="LJD-nK-JQq"/>
                 <constraint firstItem="bvO-Z6-Hd5" firstAttribute="top" secondItem="RDE-Wk-OYm" secondAttribute="bottom" id="S4M-fn-WvJ"/>
                 <constraint firstItem="bvO-Z6-Hd5" firstAttribute="centerX" secondItem="RDE-Wk-OYm" secondAttribute="centerX" id="Ste-Bt-sW1"/>
                 <constraint firstItem="6zt-EF-g7I" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WJM-hd-uyp"/>
-                <constraint firstItem="1Lh-hp-b0t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cFG-Q4-ZBQ"/>
                 <constraint firstItem="RDE-Wk-OYm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fU4-JT-4Sb"/>
                 <constraint firstItem="6zt-EF-g7I" firstAttribute="top" secondItem="1Lh-hp-b0t" secondAttribute="bottom" constant="20" id="xoi-hf-xfB"/>
             </constraints>

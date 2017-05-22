@@ -13,3 +13,10 @@ class DefinitionView: UIView
 {
     
 }
+
+extension DefinitionView
+{
+    class func instanceFromNib() -> DefinitionView {
+        return UINib(nibName: "DefinitionView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! DefinitionView
+    }
+}

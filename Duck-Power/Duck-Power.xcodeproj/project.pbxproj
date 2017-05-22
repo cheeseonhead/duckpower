@@ -22,6 +22,7 @@
 		8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405C50460C518D92A5C9763 /* AnimatedImageView.swift */; };
 		8405C87FB0DD85D7FC5B8B4B /* DancingDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405C1C72445113EEABEB912 /* DancingDuck.swift */; };
 		8405CBC661C59F54CCAD4B9C /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8405CA927E82B1C3A94E4B13 /* impact.ttf */; };
+		8C6C01CD4F87D6760E00469B /* Pods_Duck_Power.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC1DA19EC193318C22555BA /* Pods_Duck_Power.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BC1DA19EC193318C22555BA /* Pods_Duck_Power.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duck_Power.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		420ABE06DD0C7ADA2D3FAC48 /* Pods-Duck-Power.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duck-Power.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duck-Power/Pods-Duck-Power.debug.xcconfig"; sourceTree = "<group>"; };
 		56C377E11ED246D70049D1A1 /* DuckHoldingArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckHoldingArrowView.swift; sourceTree = "<group>"; };
 		56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckTiltingHead.swift; sourceTree = "<group>"; };
 		56C377E51ED25E330049D1A1 /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		8405C1C72445113EEABEB912 /* DancingDuck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DancingDuck.swift; sourceTree = "<group>"; };
 		8405C50460C518D92A5C9763 /* AnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 		8405CA927E82B1C3A94E4B13 /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = impact.ttf; sourceTree = "<group>"; };
+		A8A3370D77628E830C15F7EE /* Pods-Duck-Power.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duck-Power.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duck-Power/Pods-Duck-Power.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6C01CD4F87D6760E00469B /* Pods_Duck_Power.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18AE280172C135ED6EAF4F8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				420ABE06DD0C7ADA2D3FAC48 /* Pods-Duck-Power.debug.xcconfig */,
+				A8A3370D77628E830C15F7EE /* Pods-Duck-Power.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		56C43E321ED21FB60023F067 = {
 			isa = PBXGroup;
 			children = (
 				56C43E3D1ED21FB60023F067 /* Duck-Power */,
 				56C43E521ED21FB60023F067 /* Duck-PowerTests */,
 				56C43E3C1ED21FB60023F067 /* Products */,
+				18AE280172C135ED6EAF4F8F /* Pods */,
+				859FAB49663C78C93ABC203B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +187,14 @@
 			path = Ducks;
 			sourceTree = "<group>";
 		};
+		859FAB49663C78C93ABC203B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BC1DA19EC193318C22555BA /* Pods_Duck_Power.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56C43E581ED21FB60023F067 /* Build configuration list for PBXNativeTarget "Duck-Power" */;
 			buildPhases = (
+				F2F8ABCB3691014BD13BC58F /* [CP] Check Pods Manifest.lock */,
 				56C43E371ED21FB60023F067 /* Sources */,
 				56C43E381ED21FB60023F067 /* Frameworks */,
 				56C43E391ED21FB60023F067 /* Resources */,
+				8203533EA72A6CC41984B282 /* [CP] Embed Pods Frameworks */,
+				7711CFB65B42F17AA4410168 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,6 +300,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7711CFB65B42F17AA4410168 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Duck-Power/Pods-Duck-Power-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8203533EA72A6CC41984B282 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Duck-Power/Pods-Duck-Power-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2F8ABCB3691014BD13BC58F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56C43E371ED21FB60023F067 /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		56C43E591ED21FB60023F067 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420ABE06DD0C7ADA2D3FAC48 /* Pods-Duck-Power.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R73WSN5T33;
@@ -436,6 +512,7 @@
 		};
 		56C43E5A1ED21FB60023F067 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A3370D77628E830C15F7EE /* Pods-Duck-Power.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R73WSN5T33;
