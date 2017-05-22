@@ -14,14 +14,61 @@ class OverlayViewController: UIViewController
 {
     @IBOutlet weak var contentHolder: UIView!
     
+    let contentViews = [DefinitionView.instanceFromNib(), EvolutionView.instanceFromNib(), DisclaimerView.instanceFromNib()]
+    
     override func viewDidLoad()
     {
-        let definitionView = DisclaimerView.instanceFromNib()
+        super.viewDidLoad()
+        setContent(to: contentViews[0])
+    }
+}
+
+// MARK: ContentHolder Helpers
+extension OverlayViewController
+{
+    func previousContent()
+    {
+        guard let curIndex = getCurrentIndex(),
+            curIndex > 0 else {
+                return
+        }
         
-        contentHolder.addSubview(definitionView)
+        setContent(to: contentViews[curIndex-1])
+    }
+    
+    func nextContent()
+    {
+        guard let curIndex = getCurrentIndex(),
+            curIndex < contentViews.count - 2 else {
+                return
+        }
         
-        definitionView.snp.makeConstraints { (make) in
+        setContent(to: contentViews[curIndex+1])
+    }
+    
+    
+    func setContent(to view:UIView)
+    {
+        contentHolder.removeAllSubviews()
+        contentHolder.addSubview(view)
+        
+        view.snp.makeConstraints { (make) in
             make.edges.equalTo(contentHolder)
+        }
+    }
+    
+    func getCurrentIndex() -> Int?
+    {
+        return contentViews.index(of: contentHolder.subviews[0])
+    }
+}
+
+extension UIView
+{
+    func removeAllSubviews()
+    {
+        for subview in subviews {
+            subview.removeFromSuperview()
         }
     }
 }
