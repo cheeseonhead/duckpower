@@ -16,13 +16,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duck·pow·er" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDE-Wk-OYm">
-                    <rect key="frame" x="0.0" y="0.0" width="110.5" height="22.5"/>
-                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                    <rect key="frame" x="0.0" y="0.0" width="132.5" height="27"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="noun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvO-Z6-Hd5">
-                    <rect key="frame" x="37" y="22.5" width="38" height="19"/>
+                    <rect key="frame" x="48" y="27" width="38" height="19"/>
                     <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
