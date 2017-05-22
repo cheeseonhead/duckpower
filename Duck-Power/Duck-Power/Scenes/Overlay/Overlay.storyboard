@@ -17,10 +17,10 @@
                         <viewControllerLayoutGuide type="top" id="8Ty-cG-EAu"/>
                         <viewControllerLayoutGuide type="bottom" id="Hbb-kD-wNk"/>
                     </layoutGuides>
-                    <view key="view" hidden="YES" alpha="0.10000000000000001" contentMode="scaleToFill" id="9XA-87-uYH" customClass="Over">
+                    <view key="view" hidden="YES" contentMode="scaleToFill" id="9XA-87-uYH" customClass="Over">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99607843139999996" green="0.83137254900000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>

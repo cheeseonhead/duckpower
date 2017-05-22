@@ -160,14 +160,24 @@
                                     <constraint firstAttribute="width" secondItem="1XW-QL-A8I" secondAttribute="height" multiplier="320:133" id="uJU-Hu-v1C"/>
                                 </constraints>
                             </view>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-EV-irx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <connections>
+                                    <segue destination="9Fc-kA-T5C" kind="embed" id="382-ua-0BC"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.38823529411764707" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="q2g-EV-irx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3d2-8q-htF"/>
+                            <constraint firstItem="q2g-EV-irx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4CA-db-PYe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q2g-EV-irx" secondAttribute="bottom" id="L3T-fH-vO3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ppc-T0-iQe" secondAttribute="trailing" id="LyD-8P-FCu"/>
                             <constraint firstItem="1XW-QL-A8I" firstAttribute="top" secondItem="Ppc-T0-iQe" secondAttribute="bottom" id="Q7d-RW-kco"/>
                             <constraint firstItem="Ppc-T0-iQe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-10" id="RWa-9L-R9V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EcN-aC-1CC" secondAttribute="trailing" id="U8A-Wv-hNj"/>
                             <constraint firstItem="EcN-aC-1CC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UvE-wm-JL2"/>
+                            <constraint firstAttribute="trailing" secondItem="q2g-EV-irx" secondAttribute="trailing" id="eEp-Uk-d0n"/>
                             <constraint firstItem="1XW-QL-A8I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gab-cr-XWf"/>
                             <constraint firstAttribute="trailing" secondItem="1XW-QL-A8I" secondAttribute="trailing" id="qQq-wz-15W"/>
                             <constraint firstItem="Ppc-T0-iQe" firstAttribute="top" secondItem="EcN-aC-1CC" secondAttribute="bottom" id="qxe-IE-qyv"/>
@@ -178,6 +188,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="duckPowerNumberLabel" destination="Wi8-7n-JXY" id="Yak-zx-Rb9"/>
+                        <outlet property="overlayView" destination="q2g-EV-irx" id="e0g-5u-epa"/>
                         <outletCollection property="duckViews" destination="ho7-4b-Dof" collectionClass="NSMutableArray" id="V24-Dh-epb"/>
                         <outletCollection property="duckViews" destination="GYh-SA-L9H" collectionClass="NSMutableArray" id="R1L-c7-rWL"/>
                         <outletCollection property="duckViews" destination="C0V-GH-n1m" collectionClass="NSMutableArray" id="34b-ZB-581"/>
@@ -189,6 +200,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="37.5"/>
+        </scene>
+        <!--Overlay-->
+        <scene sceneID="AGL-Xt-QvN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Overlay" id="9Fc-kA-T5C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAT-93-wTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-57"/>
         </scene>
     </scenes>
     <resources>

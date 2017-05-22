@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var duckViews: [AnimatedImageView]!
     @IBOutlet weak var duckPowerNumberLabel: UILabel!
+    @IBOutlet weak var overlayView: UIView!
     
     override func viewDidLoad()
     {
@@ -40,12 +41,17 @@ class ViewController: UIViewController {
     
     @IBAction func questionButtonTapped(_ sender: Any)
     {
-        let storyboard = UIStoryboard.init(name: "Overlay", bundle: nil)
-        let overlayVC = storyboard.instantiateInitialViewController()
-        
-        overlayVC?.modalPresentationStyle = .overCurrentContext
-        overlayVC?.modalTransitionStyle = .crossDissolve
-        present(overlayVC!, animated: true, completion: nil)
+        overlayView.alpha = 0
+        overlayView.isHidden = false
+        UIView.animate(withDuration: 0.3) { 
+            self.overlayView.alpha = 1
+        }
+//        let storyboard = UIStoryboard.init(name: "Overlay", bundle: nil)
+//        let overlayVC = storyboard.instantiateInitialViewController()
+//        
+//        overlayVC?.modalPresentationStyle = .overCurrentContext
+//        overlayVC?.modalTransitionStyle = .coverVertical
+//        present(overlayVC!, animated: true, completion: nil)
     }
 }
 
