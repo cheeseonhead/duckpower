@@ -16,7 +16,7 @@ class OverlayViewController: UIViewController
     
     override func viewDidLoad()
     {
-        let definitionView = EvolutionView.instanceFromNib()
+        let definitionView = DisclaimerView.instanceFromNib()
         
         contentHolder.addSubview(definitionView)
         
