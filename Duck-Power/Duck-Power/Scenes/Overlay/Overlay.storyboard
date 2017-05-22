@@ -31,17 +31,22 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZ5-3u-WOY" userLabel="Display Holder">
                                         <rect key="frame" x="0.0" y="66.333333333333329" width="406" height="213"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBg-T3-ee7" userLabel="ButtonLeft">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBg-T3-ee7" userLabel="ButtonLeft">
                                                 <rect key="frame" x="0.0" y="69.666666666666657" width="27" height="74"/>
                                                 <state key="normal" image="ArrowLeft"/>
+                                                <connections>
+                                                    <action selector="arrowLeftTapped:" destination="pPO-22-0uS" eventType="touchUpInside" id="cuD-df-t5h"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-My-MmR" userLabel="ButtonRight">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-My-MmR" userLabel="ButtonRight">
                                                 <rect key="frame" x="378" y="69.666666666666657" width="28" height="74"/>
                                                 <state key="normal" image="ArrowRight"/>
+                                                <connections>
+                                                    <action selector="arrowRightTapped:" destination="pPO-22-0uS" eventType="touchUpInside" id="DwH-bj-evU"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEY-eP-qiL" userLabel="ContentHolder">
                                                 <rect key="frame" x="31" y="0.0" width="343" height="212.99999999999997"/>
-                                                <color key="backgroundColor" red="0.99215686270000003" green="0.38823529410000002" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
                                         <constraints>

@@ -23,6 +23,19 @@ class OverlayViewController: UIViewController
     }
 }
 
+// MARK: Button Handlers
+extension OverlayViewController
+{
+    @IBAction func arrowLeftTapped(_ sender: Any)
+    {
+        previousContent()
+    }
+    @IBAction func arrowRightTapped(_ sender: Any)
+    {
+        nextContent()
+    }
+}
+
 // MARK: ContentHolder Helpers
 extension OverlayViewController
 {
@@ -39,7 +52,7 @@ extension OverlayViewController
     func nextContent()
     {
         guard let curIndex = getCurrentIndex(),
-            curIndex < contentViews.count - 2 else {
+            curIndex < contentViews.count - 1 else {
                 return
         }
         
