@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		56C377E21ED246D70049D1A1 /* DuckHoldingArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E11ED246D70049D1A1 /* DuckHoldingArrowView.swift */; };
 		56C377E41ED2518C0049D1A1 /* DuckTiltingHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */; };
+		56C377E61ED25E330049D1A1 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E51ED25E330049D1A1 /* Overlay.swift */; };
+		56C377E81ED25E9F0049D1A1 /* Overlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C377E71ED25E9F0049D1A1 /* Overlay.storyboard */; };
 		56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E3E1ED21FB60023F067 /* AppDelegate.swift */; };
 		56C43E411ED21FB60023F067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E401ED21FB60023F067 /* ViewController.swift */; };
 		56C43E441ED21FB60023F067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C43E421ED21FB60023F067 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		56C377E11ED246D70049D1A1 /* DuckHoldingArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckHoldingArrowView.swift; sourceTree = "<group>"; };
 		56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckTiltingHead.swift; sourceTree = "<group>"; };
+		56C377E51ED25E330049D1A1 /* Overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overlay.swift; sourceTree = "<group>"; };
+		56C377E71ED25E9F0049D1A1 /* Overlay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overlay.storyboard; sourceTree = "<group>"; };
 		56C43E3B1ED21FB60023F067 /* Duck-Power.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck-Power.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C43E3E1ED21FB60023F067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C43E401ED21FB60023F067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				56C43E4A1ED21FB60023F067 /* Info.plist */,
 				8405C050BBCEDAA4B695C05E /* Views */,
 				8405C94FD4846852AFF9B173 /* Assets */,
+				8405CA241EE8EDEB20161C75 /* Scenes */,
 			);
 			path = "Duck-Power";
 			sourceTree = "<group>";
@@ -123,6 +128,23 @@
 				8405CA927E82B1C3A94E4B13 /* impact.ttf */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		8405CA241EE8EDEB20161C75 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8405CC6400533F62CD004BF1 /* Overlay */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8405CC6400533F62CD004BF1 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				56C377E51ED25E330049D1A1 /* Overlay.swift */,
+				56C377E71ED25E9F0049D1A1 /* Overlay.storyboard */,
+			);
+			path = Overlay;
 			sourceTree = "<group>";
 		};
 		8405CD9545D0960B7388F52A /* Ducks */ = {
@@ -224,6 +246,7 @@
 				56C43E461ED21FB60023F067 /* Assets.xcassets in Resources */,
 				56C43E441ED21FB60023F067 /* Main.storyboard in Resources */,
 				8405CBC661C59F54CCAD4B9C /* impact.ttf in Resources */,
+				56C377E81ED25E9F0049D1A1 /* Overlay.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +268,7 @@
 				56C43E411ED21FB60023F067 /* ViewController.swift in Sources */,
 				56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */,
 				8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */,
+				56C377E61ED25E330049D1A1 /* Overlay.swift in Sources */,
 				56C377E41ED2518C0049D1A1 /* DuckTiltingHead.swift in Sources */,
 				8405C87FB0DD85D7FC5B8B4B /* DancingDuck.swift in Sources */,
 			);

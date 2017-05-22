@@ -37,6 +37,16 @@ class ViewController: UIViewController {
         
         duckPowerNumberLabel.text = "\(horsePower * 40)"
     }
+    
+    @IBAction func questionButtonTapped(_ sender: Any)
+    {
+        let storyboard = UIStoryboard.init(name: "Overlay", bundle: nil)
+        let overlayVC = storyboard.instantiateInitialViewController()
+        
+        overlayVC?.modalPresentationStyle = .overCurrentContext
+        overlayVC?.modalTransitionStyle = .crossDissolve
+        present(overlayVC!, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UITextFieldDelegate
