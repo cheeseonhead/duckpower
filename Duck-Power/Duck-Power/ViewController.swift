@@ -46,12 +46,6 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3) { 
             self.overlayView.alpha = 1
         }
-//        let storyboard = UIStoryboard.init(name: "Overlay", bundle: nil)
-//        let overlayVC = storyboard.instantiateInitialViewController()
-//        
-//        overlayVC?.modalPresentationStyle = .overCurrentContext
-//        overlayVC?.modalTransitionStyle = .coverVertical
-//        present(overlayVC!, animated: true, completion: nil)
     }
 }
 

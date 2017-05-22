@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,23 +18,40 @@
                         <viewControllerLayoutGuide type="top" id="8Ty-cG-EAu"/>
                         <viewControllerLayoutGuide type="bottom" id="Hbb-kD-wNk"/>
                     </layoutGuides>
-                    <view key="view" hidden="YES" contentMode="scaleToFill" id="9XA-87-uYH" customClass="Over">
+                    <view key="view" contentMode="scaleToFill" id="9XA-87-uYH" userLabel="Main" customClass="Over">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZy-8h-UFt">
-                                <rect key="frame" x="0.0" y="136" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZy-8h-UFt" userLabel="Center Holder">
+                                <rect key="frame" x="0.0" y="127" width="375" height="413"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-overlay" translatesAutoresizingMaskIntoConstraints="NO" id="QME-8z-yIy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="413"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="QME-8z-yIy" secondAttribute="bottom" id="btf-fg-dne"/>
+                                    <constraint firstItem="QME-8z-yIy" firstAttribute="top" secondItem="aZy-8h-UFt" secondAttribute="top" id="ccL-IW-iT3"/>
+                                    <constraint firstItem="QME-8z-yIy" firstAttribute="leading" secondItem="aZy-8h-UFt" secondAttribute="leading" id="eni-vJ-hTY"/>
+                                    <constraint firstAttribute="trailing" secondItem="QME-8z-yIy" secondAttribute="trailing" id="oJh-Fm-dgw"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aZy-8h-UFt" firstAttribute="centerY" secondItem="9XA-87-uYH" secondAttribute="centerY" id="0CB-9c-a9Q"/>
+                            <constraint firstItem="aZy-8h-UFt" firstAttribute="leading" secondItem="9XA-87-uYH" secondAttribute="leadingMargin" constant="-16" id="8Bd-nA-DWo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aZy-8h-UFt" secondAttribute="trailing" constant="-16" id="PGx-V6-YJq"/>
+                        </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Nc-jT-f7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-310" y="-49"/>
+            <point key="canvasLocation" x="-311.19999999999999" y="-49.025487256371818"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="duck-overlay" width="413" height="413"/>
+    </resources>
 </document>

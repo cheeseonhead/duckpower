@@ -11,12 +11,4 @@ import UIKit
 
 class OverlayViewController: UIViewController
 {
-    override func viewDidAppear(_ animated: Bool)
-    {
-        view.alpha = 0
-        view.isHidden = false
-        UIView.animate(withDuration: 0.1) { 
-            self.view.alpha = 0.5
-        }
-    }
 }
