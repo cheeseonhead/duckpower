@@ -11,6 +11,8 @@
 		56C377E41ED2518C0049D1A1 /* DuckTiltingHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */; };
 		56C377E61ED25E330049D1A1 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E51ED25E330049D1A1 /* OverlayViewController.swift */; };
 		56C377E81ED25E9F0049D1A1 /* Overlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C377E71ED25E9F0049D1A1 /* Overlay.storyboard */; };
+		56C377EA1ED26AFF0049D1A1 /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C377E91ED26AFF0049D1A1 /* DefinitionView.swift */; };
+		56C377EC1ED26B0E0049D1A1 /* DefinitionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C377EB1ED26B0E0049D1A1 /* DefinitionView.xib */; };
 		56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E3E1ED21FB60023F067 /* AppDelegate.swift */; };
 		56C43E411ED21FB60023F067 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C43E401ED21FB60023F067 /* ViewController.swift */; };
 		56C43E441ED21FB60023F067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C43E421ED21FB60023F067 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		56C377E31ED2518C0049D1A1 /* DuckTiltingHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckTiltingHead.swift; sourceTree = "<group>"; };
 		56C377E51ED25E330049D1A1 /* OverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
 		56C377E71ED25E9F0049D1A1 /* Overlay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overlay.storyboard; sourceTree = "<group>"; };
+		56C377E91ED26AFF0049D1A1 /* DefinitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionView.swift; sourceTree = "<group>"; };
+		56C377EB1ED26B0E0049D1A1 /* DefinitionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefinitionView.xib; sourceTree = "<group>"; };
 		56C43E3B1ED21FB60023F067 /* Duck-Power.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck-Power.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C43E3E1ED21FB60023F067 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C43E401ED21FB60023F067 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 		8405C2D4A41228332816B184 /* Definition */ = {
 			isa = PBXGroup;
 			children = (
+				56C377E91ED26AFF0049D1A1 /* DefinitionView.swift */,
+				56C377EB1ED26B0E0049D1A1 /* DefinitionView.xib */,
 			);
 			path = Definition;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 				56C43E441ED21FB60023F067 /* Main.storyboard in Resources */,
 				8405CBC661C59F54CCAD4B9C /* impact.ttf in Resources */,
 				56C377E81ED25E9F0049D1A1 /* Overlay.storyboard in Resources */,
+				56C377EC1ED26B0E0049D1A1 /* DefinitionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 				56C377E21ED246D70049D1A1 /* DuckHoldingArrowView.swift in Sources */,
 				56C43E411ED21FB60023F067 /* ViewController.swift in Sources */,
 				56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */,
+				56C377EA1ED26AFF0049D1A1 /* DefinitionView.swift in Sources */,
 				8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */,
 				56C377E61ED25E330049D1A1 /* OverlayViewController.swift in Sources */,
 				56C377E41ED2518C0049D1A1 /* DuckTiltingHead.swift in Sources */,
