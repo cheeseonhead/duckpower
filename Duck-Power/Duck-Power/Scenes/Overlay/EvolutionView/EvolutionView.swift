@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+class EvolutionView: UIView {
+    
+}
+
+extension EvolutionView
+{
+    class func instanceFromNib() -> EvolutionView {
+        return UINib(nibName: "EvolutionView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! EvolutionView
+    }
+}
