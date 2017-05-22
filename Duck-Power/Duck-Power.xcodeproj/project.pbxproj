@@ -122,6 +122,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8405C2D4A41228332816B184 /* Definition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Definition;
+			sourceTree = "<group>";
+		};
 		8405C94FD4846852AFF9B173 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +150,7 @@
 			children = (
 				56C377E51ED25E330049D1A1 /* OverlayViewController.swift */,
 				56C377E71ED25E9F0049D1A1 /* Overlay.storyboard */,
+				8405C2D4A41228332816B184 /* Definition */,
 			);
 			path = Overlay;
 			sourceTree = "<group>";
