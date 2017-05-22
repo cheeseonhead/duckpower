@@ -276,7 +276,7 @@
 				TargetAttributes = {
 					56C43E3A1ED21FB60023F067 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = R73WSN5T33;
+						DevelopmentTeam = PL469KE6KQ;
 						ProvisioningStyle = Automatic;
 					};
 					56C43E4E1ED21FB60023F067 = {
@@ -533,10 +533,11 @@
 			baseConfigurationReference = 420ABE06DD0C7ADA2D3FAC48 /* Pods-Duck-Power.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R73WSN5T33;
+				DEVELOPMENT_TEAM = PL469KE6KQ;
 				INFOPLIST_FILE = "Duck-Power/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.okaystudios.Duck-Power";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okaystudios.duckpowerconverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -547,10 +548,11 @@
 			baseConfigurationReference = A8A3370D77628E830C15F7EE /* Pods-Duck-Power.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R73WSN5T33;
+				DEVELOPMENT_TEAM = PL469KE6KQ;
 				INFOPLIST_FILE = "Duck-Power/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.okaystudios.Duck-Power";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okaystudios.duckpowerconverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
