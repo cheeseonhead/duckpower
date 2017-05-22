@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var duckPowerNumberLabel: UILabel!
     @IBOutlet weak var overlayView: UIView!
     
+    weak var overlayViewController: OverlayViewController?
+    
     override func viewDidLoad()
     {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
@@ -31,20 +33,58 @@ class ViewController: UIViewController {
     
     @IBAction func numberChanged(_ sender: UITextField)
     {
-        guard let text = sender.text,
-        let horsePower = Int(text) else {
-            return
+        updateDuckPower(from: sender)
+    }
+    
+    @IBAction func editingEnded(_ sender: UITextField)
+    {
+        if sender.text?.characters.count == 0 {
+            sender.text = "0"
+            
+            updateDuckPower(from: sender)
         }
-        
-        duckPowerNumberLabel.text = "\(horsePower * 40)"
     }
     
     @IBAction func questionButtonTapped(_ sender: Any)
     {
+        showOverlay()
+    }
+}
+
+// MARK: Calculation
+extension ViewController
+{
+    func updateDuckPower(from textfield: UITextField)
+    {
+        guard let text = textfield.text,
+            let horsePower = Int(text) else {
+                return
+        }
+        
+        duckPowerNumberLabel.text = "\(horsePower * 40)"
+    }
+}
+
+// MARK: Overlay View Methods
+extension ViewController
+{
+    func showOverlay()
+    {
+        dismissKeyboard()
+        
         overlayView.alpha = 0
         overlayView.isHidden = false
-        UIView.animate(withDuration: 0.3) { 
+        UIView.animate(withDuration: 0.3) {
             self.overlayView.alpha = 1
+        }
+    }
+    
+    func hideOverlay()
+    {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.overlayView.alpha = 0
+        }) { (finished) in
+            self.overlayView.isHidden = true
         }
     }
 }
@@ -59,10 +99,25 @@ extension ViewController: UITextFieldDelegate
     }
 }
 
+extension ViewController: OverlayViewControllerDelegate
+{
+    func closeOverlay() {
+        hideOverlay()
+    }
+}
+
 extension ViewController
 {
     func dismissKeyboard()
     {
         view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "Overlay" {
+            overlayViewController = segue.destination as? OverlayViewController
+            overlayViewController?.delegate = self
+        }
     }
 }

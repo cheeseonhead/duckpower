@@ -10,8 +10,14 @@ import Foundation
 import UIKit
 import SnapKit
 
+protocol OverlayViewControllerDelegate
+{
+    func closeOverlay()
+}
+
 class OverlayViewController: UIViewController
 {
+    var delegate: OverlayViewControllerDelegate?
     @IBOutlet weak var contentHolder: UIView!
     
     let contentViews = [DefinitionView.instanceFromNib(), EvolutionView.instanceFromNib(), DisclaimerView.instanceFromNib()]
@@ -20,6 +26,16 @@ class OverlayViewController: UIViewController
     {
         super.viewDidLoad()
         setContent(to: contentViews[0])
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(self.closeOverlay))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func closeOverlay()
+    {
+        delegate?.closeOverlay()
     }
 }
 

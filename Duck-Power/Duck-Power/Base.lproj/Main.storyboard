@@ -37,8 +37,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="-24" translatesAutoresizingMaskIntoConstraints="NO" id="C3M-7a-wjV">
                                         <rect key="frame" x="11" y="199" width="275.5" height="123"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi8-7n-JXY">
-                                                <rect key="frame" x="148.5" y="0.0" width="127" height="73.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi8-7n-JXY">
+                                                <rect key="frame" x="123.5" y="0.0" width="152" height="73.5"/>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,7 +56,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fih-gO-fVf">
                                         <rect key="frame" x="0.0" y="0.0" width="230" height="74"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="99999" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="420" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="74"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="167" id="xu5-wR-mHH"/>
@@ -65,6 +65,7 @@
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                                 <connections>
+                                                    <action selector="editingEnded:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="oZZ-A1-gwf"/>
                                                     <action selector="numberChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="8an-6N-hUo"/>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Jtb-Ls-5kd"/>
                                                 </connections>
@@ -92,17 +93,17 @@
                                 <rect key="frame" x="16" y="0.0" width="288" height="113"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="22" width="50" height="59"/>
+                                        <rect key="frame" x="30" y="22.5" width="50" height="59"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beB-7i-5g3">
-                                        <rect key="frame" x="251" y="37" width="37" height="39"/>
+                                        <rect key="frame" x="251" y="37.5" width="37" height="39"/>
                                         <state key="normal" image="QuestionButton"/>
                                         <connections>
                                             <action selector="questionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ai-4x-RlO"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="135" y="41" width="50" height="59"/>
+                                        <rect key="frame" x="135" y="41.5" width="50" height="59"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -163,7 +164,7 @@
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-EV-irx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <connections>
-                                    <segue destination="9Fc-kA-T5C" kind="embed" id="382-ua-0BC"/>
+                                    <segue destination="9Fc-kA-T5C" kind="embed" identifier="Overlay" id="382-ua-0BC"/>
                                 </connections>
                             </containerView>
                         </subviews>
