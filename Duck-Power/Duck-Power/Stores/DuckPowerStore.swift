@@ -8,10 +8,6 @@
 
 import Foundation
 
-struct DuckPower: Codable {
-    var ratio: Int
-}
-
 class DuckPowerStore {
     static let sharedInstance = DuckPowerStore()
     
