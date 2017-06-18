@@ -33,7 +33,7 @@ class OverlayViewController: UIViewController
         view.addGestureRecognizer(tap)
     }
     
-    func closeOverlay()
+    @objc func closeOverlay()
     {
         delegate?.closeOverlay()
     }

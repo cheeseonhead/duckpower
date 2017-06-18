@@ -101,7 +101,7 @@ extension ViewController
 extension ViewController: UITextFieldDelegate
 {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        textField.typingAttributes = [NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue]
+        textField.typingAttributes = [NSAttributedStringKey.underlineStyle.rawValue: NSUnderlineStyle.styleSingle.rawValue]
         
         let currentString: NSString = textField.text! as NSString
         let newString: String = currentString.replacingCharacters(in: range, with: string)
@@ -118,7 +118,7 @@ extension ViewController: OverlayViewControllerDelegate
 
 extension ViewController
 {
-    func dismissKeyboard()
+    @objc func dismissKeyboard()
     {
         view.endEditing(true)
     }
