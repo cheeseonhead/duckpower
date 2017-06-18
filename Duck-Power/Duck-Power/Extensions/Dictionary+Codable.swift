@@ -9,14 +9,16 @@
 import Foundation
 
 extension Dictionary {
-    func convertToDictionary() -> [String: Any]? {
-        if let data = self.data(using: .utf8) {
-            do {
-                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-            } catch {
-                print(error.localizedDescription)
-            }
+    func stringFromHttpParameters() -> String
+    {
+        let parameterArray = self.map
+        { (arg) -> String in
+            let (key, value) = arg
+            let percentEscapedKey = (key as! String).addingPercentEncodingForURLQueryValue()!
+            let percentEscapedValue = (value as! String).addingPercentEncodingForURLQueryValue()!
+            return "\(percentEscapedKey)=\(percentEscapedValue)"
         }
-        return nil
+        
+        return parameterArray.joined(separator: "&")
     }
 }
