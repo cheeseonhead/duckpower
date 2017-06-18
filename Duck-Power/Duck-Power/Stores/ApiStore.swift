@@ -38,44 +38,14 @@ enum ApiErrorType {
     case clientError
 }
 
-typealias OGSApiResultBlock = (_ statusCode: HTTPStatusCode, _ payload: [String: Any]?, _ error: Error?) -> Void
+typealias ApiResultBlock = (_ statusCode: HTTPStatusCode, _ payload: [String: Any]?, _ error: Error?) -> Void
 
-class OGSApiStore {
-    var sessionController: OGSSessionController
-    var session: OGSSession {
-        return sessionController.current
-    }
-    var clientID: String {
-        return session.configuration.clientID
-    }
-    var clientSecret: String! {
-        return session.configuration.clientSecret
-    }
+class ApiStore {
     var domainName: String {
-        return session.configuration.domainName
-    }
-    var accessToken: String? {
-        get {
-            return session.accessToken
-        }
-        set {
-            sessionController.current.accessToken = newValue
-        }
-    }
-    var refreshToken: String? {
-        get {
-            return session.refreshToken
-        }
-        set {
-            sessionController.current.refreshToken = newValue
-        }
+        return "http://okaystudios.ca/"
     }
     
-    required init(sessionController: OGSSessionController) {
-        self.sessionController = sessionController
-    }
-    
-    func request(toUrl url: String, method: HTTPMethod, parameters: [String: String], completion: @escaping OGSApiResultBlock) {
+    func request(toUrl url: String, method: HTTPMethod, parameters: [String: String], completion: @escaping ApiResultBlock) {
         guard let fullURL = URL(string: domainName.appending(url)) else { return }
         
         let request = createRequest(fullURL: fullURL, method: method, parameters: parameters)
@@ -87,15 +57,12 @@ class OGSApiStore {
         var request = URLRequest(url: fullURL)
         request.httpMethod = method.rawValue
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        if let token = accessToken {
-            request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        }
         request.httpBody = parameters.stringFromHttpParameters().data(using: .utf8)
         
         return request
     }
     
-    private func send(request: URLRequest, completion: @escaping OGSApiResultBlock) {
+    private func send(request: URLRequest, completion: @escaping ApiResultBlock) {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let httpResponse = response as? HTTPURLResponse, let data = data else {
                 completion(.clientError, nil, error)
