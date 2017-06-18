@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		34C1C7DC1EF656A3004F62A7 /* DuckPowerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C1C7DB1EF656A3004F62A7 /* DuckPowerStore.swift */; };
 		34CCA5A51EF674DD003746D0 /* ApiStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CCA5A41EF674DD003746D0 /* ApiStore.swift */; };
+		34CCA5A81EF675BB003746D0 /* Dictionary+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CCA5A71EF675BB003746D0 /* Dictionary+Codable.swift */; };
 		565C4E4E1ED283F50055A4AA /* EvolutionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 565C4E4D1ED283F50055A4AA /* EvolutionView.xib */; };
 		565C4E501ED284000055A4AA /* EvolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565C4E4F1ED284000055A4AA /* EvolutionView.swift */; };
 		565C4E521ED286C40055A4AA /* DisclaimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 565C4E511ED286C40055A4AA /* DisclaimerView.xib */; };
@@ -45,6 +46,7 @@
 		0BC1DA19EC193318C22555BA /* Pods_Duck_Power.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duck_Power.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C1C7DB1EF656A3004F62A7 /* DuckPowerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckPowerStore.swift; sourceTree = "<group>"; };
 		34CCA5A41EF674DD003746D0 /* ApiStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStore.swift; sourceTree = "<group>"; };
+		34CCA5A71EF675BB003746D0 /* Dictionary+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Codable.swift"; sourceTree = "<group>"; };
 		420ABE06DD0C7ADA2D3FAC48 /* Pods-Duck-Power.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duck-Power.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duck-Power/Pods-Duck-Power.debug.xcconfig"; sourceTree = "<group>"; };
 		565C4E4D1ED283F50055A4AA /* EvolutionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EvolutionView.xib; sourceTree = "<group>"; };
 		565C4E4F1ED284000055A4AA /* EvolutionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvolutionView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			path = Stores;
 			sourceTree = "<group>";
 		};
+		34CCA5A61EF675A4003746D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34CCA5A71EF675BB003746D0 /* Dictionary+Codable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		56C43E321ED21FB60023F067 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		56C43E3D1ED21FB60023F067 /* Duck-Power */ = {
 			isa = PBXGroup;
 			children = (
+				34CCA5A61EF675A4003746D0 /* Extensions */,
 				34C1C7DA1EF65659004F62A7 /* Stores */,
 				56C43E4A1ED21FB60023F067 /* Info.plist */,
 				56C43E3E1ED21FB60023F067 /* AppDelegate.swift */,
@@ -406,6 +417,7 @@
 				56C43E411ED21FB60023F067 /* ViewController.swift in Sources */,
 				565C4E541ED286CE0055A4AA /* DisclaimerView.swift in Sources */,
 				56C43E3F1ED21FB60023F067 /* AppDelegate.swift in Sources */,
+				34CCA5A81EF675BB003746D0 /* Dictionary+Codable.swift in Sources */,
 				56C377EA1ED26AFF0049D1A1 /* DefinitionView.swift in Sources */,
 				34C1C7DC1EF656A3004F62A7 /* DuckPowerStore.swift in Sources */,
 				8405C4CABB9C272C86B4D201 /* AnimatedImageView.swift in Sources */,
