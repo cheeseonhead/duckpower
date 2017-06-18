@@ -38,7 +38,7 @@ enum ApiErrorType {
     case clientError
 }
 
-typealias ApiResultBlock = (_ statusCode: HTTPStatusCode, _ payload: [String: Any]?, _ error: Error?) -> Void
+typealias ApiResultBlock = (_ statusCode: HTTPStatusCode, _ payload: Any?, _ error: Error?) -> Void
 
 class ApiStore {
     var domainName: String {
@@ -70,7 +70,7 @@ class ApiStore {
             }
             
             do {
-                let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+                let json = try JSONSerialization.jsonObject(with: data)
                 completion(HTTPStatusCode(rawValue: httpResponse.statusCode)!, json, error)
             } catch _ {
                 print("Error Occurred")
