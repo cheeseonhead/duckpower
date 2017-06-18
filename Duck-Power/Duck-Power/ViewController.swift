@@ -15,8 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet var duckViews: [AnimatedImageView]!
     @IBOutlet weak var duckPowerNumberLabel: UILabel!
     @IBOutlet weak var overlayView: UIView!
+    @IBOutlet weak var hpField: UITextField!
     
     weak var overlayViewController: OverlayViewController?
+    
+    var selectHPField = true
     
     override func viewDidLoad()
     {
@@ -30,6 +33,10 @@ class ViewController: UIViewController {
         for duckView in duckViews
         {
             duckView.animate()
+        }
+        if selectHPField {
+            hpField.becomeFirstResponder()
+            selectHPField = false
         }
     }
     
