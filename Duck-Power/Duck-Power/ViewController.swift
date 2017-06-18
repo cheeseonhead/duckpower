@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let maxLength = 5
+    
     @IBOutlet var duckViews: [AnimatedImageView]!
     @IBOutlet weak var duckPowerNumberLabel: UILabel!
     @IBOutlet weak var overlayView: UIView!
@@ -92,7 +94,8 @@ extension ViewController
 extension ViewController: UITextFieldDelegate
 {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 5
+        textField.typingAttributes = [NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue]
+        
         let currentString: NSString = textField.text! as NSString
         let newString: String = currentString.replacingCharacters(in: range, with: string)
         return newString.characters.count <= maxLength
