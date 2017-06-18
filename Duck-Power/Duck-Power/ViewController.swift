@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     weak var overlayViewController: OverlayViewController?
     
+    private let duckStore = DuckPowerStore()
     var selectHPField = true
     
     override func viewDidLoad()
@@ -66,11 +67,13 @@ extension ViewController
     func updateDuckPower(from textfield: UITextField)
     {
         guard let text = textfield.text,
-            let horsePower = Int(text) else {
+            let horsePower = Double(text) else {
                 return
         }
         
-        duckPowerNumberLabel.text = "\(horsePower * 40)"
+        var calculation = horsePower * duckStore.getDuckPower()
+        calculation.round(.toNearestOrAwayFromZero)
+        duckPowerNumberLabel.text = "\(Int(calculation))"
     }
 }
 
