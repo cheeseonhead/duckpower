@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,27 +25,27 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppc-T0-iQe" userLabel="Center Holder">
-                                <rect key="frame" x="16.5" y="119" width="287.5" height="311"/>
+                                <rect key="frame" x="16.5" y="69.5" width="287.5" height="321.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-holding-arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-4b-Dof" customClass="DuckHoldingArrowView" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="104" y="102" width="80" height="69"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="990" image="duck-holding-arrow1" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-4b-Dof" customClass="DuckHoldingArrowView" customModule="Duck_Power" customModuleProvider="target">
+                                        <rect key="frame" x="104" y="105.5" width="80" height="69"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="-24" translatesAutoresizingMaskIntoConstraints="NO" id="C3M-7a-wjV">
-                                        <rect key="frame" x="-13.5" y="195" width="300" height="116"/>
+                                        <rect key="frame" x="11" y="198.5" width="275.5" height="123"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi8-7n-JXY">
-                                                <rect key="frame" x="133" y="0.0" width="167" height="70"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="980" text="16800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi8-7n-JXY">
+                                                <rect key="frame" x="123.5" y="0.0" width="152" height="73.5"/>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duckpower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-bj-h81">
-                                                <rect key="frame" x="0.0" y="46" width="300" height="70"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="990" text="duckpower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-bj-h81">
+                                                <rect key="frame" x="0.0" y="49.5" width="275.5" height="73.5"/>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="60"/>
                                                 <color key="textColor" red="0.99607843137254903" green="0.83137254901960778" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,10 +54,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fih-gO-fVf">
-                                        <rect key="frame" x="0.0" y="0.0" width="236" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="73.5"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
-                                                <rect key="frame" x="0.0" y="0.0" width="167" height="70"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="990" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeI-B7-tHt">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="73.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="167" id="xu5-wR-mHH"/>
                                                 </constraints>
@@ -81,8 +81,8 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Jtb-Ls-5kd"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-l0-NEW">
-                                                <rect key="frame" x="167" y="0.0" width="69" height="70"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="990" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-l0-NEW">
+                                                <rect key="frame" x="167" y="0.0" width="63" height="73.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="hp">
                                                         <attributes>
@@ -112,20 +112,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcN-aC-1CC" userLabel="Top Holder">
-                                <rect key="frame" x="16" y="20" width="288" height="99"/>
+                                <rect key="frame" x="16" y="8" width="288" height="53.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-SA-L9H" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="14" width="50" height="59"/>
+                                        <rect key="frame" x="30" y="-8" width="50" height="59"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beB-7i-5g3">
-                                        <rect key="frame" x="251" y="29" width="37" height="39"/>
+                                        <rect key="frame" x="251" y="7" width="37" height="39"/>
                                         <state key="normal" image="QuestionButton"/>
                                         <connections>
                                             <action selector="questionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ai-4x-RlO"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck1" translatesAutoresizingMaskIntoConstraints="NO" id="C0V-GH-n1m" customClass="DancingDuck" customModule="Duck_Power" customModuleProvider="target">
-                                        <rect key="frame" x="135" y="33" width="50" height="59"/>
+                                        <rect key="frame" x="135" y="11" width="50" height="59"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -138,41 +138,35 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XW-QL-A8I" userLabel="Bottom Holder">
-                                <rect key="frame" x="0.0" y="430" width="320" height="133"/>
+                                <rect key="frame" x="0.0" y="391" width="320" height="89"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xo7-d7-XDt">
-                                        <rect key="frame" x="80.5" y="6.5" width="228" height="120"/>
+                                        <rect key="frame" x="109.5" y="-1" width="170" height="89.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="PWx-uc-eGT" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
-                                                <rect key="frame" x="86" y="0.0" width="56" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="56" id="G6l-o8-mWk"/>
-                                                    <constraint firstAttribute="height" constant="70" id="buv-Os-yEA"/>
-                                                </constraints>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="PWx-uc-eGT" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
+                                                <rect key="frame" x="66" y="-6" width="42" height="52"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="Aui-h3-VzW" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
-                                                <rect key="frame" x="150" y="12" width="78" height="94"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="78" id="7LK-4d-NNW"/>
-                                                    <constraint firstAttribute="height" constant="94" id="KnC-fH-WsV"/>
-                                                </constraints>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="Aui-h3-VzW" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="6" width="58" height="70"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-IB-xhI" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="24" width="78" height="96"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="96" id="cYT-JG-2H1"/>
-                                                    <constraint firstAttribute="width" constant="78" id="jIU-pR-4hv"/>
-                                                </constraints>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck-tilting-head1" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-IB-xhI" customClass="DuckTiltingHead" customModule="Duck_Power" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="18" width="58" height="71.5"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Aui-h3-VzW" firstAttribute="top" secondItem="PWx-uc-eGT" secondAttribute="top" constant="12" id="3Da-7F-fzD"/>
+                                            <constraint firstAttribute="width" secondItem="PWx-uc-eGT" secondAttribute="height" multiplier="114:35" id="A6A-gV-Qaw"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="AVR-cJ-tV1"/>
+                                            <constraint firstItem="Aui-h3-VzW" firstAttribute="width" secondItem="Xo7-d7-XDt" secondAttribute="height" multiplier="13:20" id="GiR-Ha-EP6"/>
+                                            <constraint firstItem="ooE-IB-xhI" firstAttribute="width" secondItem="Xo7-d7-XDt" secondAttribute="height" multiplier="13:20" id="NWl-g3-Dd6"/>
+                                            <constraint firstAttribute="width" secondItem="Aui-h3-VzW" secondAttribute="height" multiplier="114:47" id="T6T-eV-4IK"/>
                                             <constraint firstAttribute="bottom" secondItem="ooE-IB-xhI" secondAttribute="bottom" id="Yzd-vx-Of7"/>
-                                            <constraint firstItem="Aui-h3-VzW" firstAttribute="leading" secondItem="PWx-uc-eGT" secondAttribute="trailing" constant="8" id="ca1-t1-yrA"/>
                                             <constraint firstItem="ooE-IB-xhI" firstAttribute="top" secondItem="PWx-uc-eGT" secondAttribute="top" constant="24" id="ehK-lC-Bzz"/>
-                                            <constraint firstItem="PWx-uc-eGT" firstAttribute="top" secondItem="Xo7-d7-XDt" secondAttribute="top" id="j9g-dh-gfJ"/>
+                                            <constraint firstAttribute="width" secondItem="Xo7-d7-XDt" secondAttribute="height" multiplier="19:10" id="gfK-eP-eAk"/>
                                             <constraint firstAttribute="trailing" secondItem="Aui-h3-VzW" secondAttribute="trailing" id="o8N-2n-SfR"/>
                                             <constraint firstItem="ooE-IB-xhI" firstAttribute="leading" secondItem="Xo7-d7-XDt" secondAttribute="leading" id="pn8-zf-aTy"/>
+                                            <constraint firstAttribute="width" secondItem="ooE-IB-xhI" secondAttribute="height" multiplier="19:8" id="qn2-lW-RXD"/>
+                                            <constraint firstItem="PWx-uc-eGT" firstAttribute="width" secondItem="Xo7-d7-XDt" secondAttribute="height" multiplier="7:15" id="r65-8f-UJa"/>
                                             <constraint firstItem="PWx-uc-eGT" firstAttribute="leading" secondItem="ooE-IB-xhI" secondAttribute="trailing" constant="8" id="zfA-xT-coI"/>
                                         </constraints>
                                     </view>
@@ -180,11 +174,11 @@
                                 <constraints>
                                     <constraint firstItem="Xo7-d7-XDt" firstAttribute="centerX" secondItem="1XW-QL-A8I" secondAttribute="centerX" constant="34" id="EeH-9Y-Bpr"/>
                                     <constraint firstItem="Xo7-d7-XDt" firstAttribute="centerY" secondItem="1XW-QL-A8I" secondAttribute="centerY" id="eCu-hP-MR3"/>
-                                    <constraint firstAttribute="width" secondItem="1XW-QL-A8I" secondAttribute="height" multiplier="320:133" id="uJU-Hu-v1C"/>
+                                    <constraint firstItem="Xo7-d7-XDt" firstAttribute="height" relation="lessThanOrEqual" secondItem="1XW-QL-A8I" secondAttribute="height" id="vfd-6f-bet"/>
                                 </constraints>
                             </view>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-EV-irx">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <connections>
                                     <segue destination="9Fc-kA-T5C" kind="embed" identifier="Overlay" id="382-ua-0BC"/>
                                 </connections>
@@ -194,6 +188,7 @@
                         <constraints>
                             <constraint firstItem="q2g-EV-irx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3d2-8q-htF"/>
                             <constraint firstItem="q2g-EV-irx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4CA-db-PYe"/>
+                            <constraint firstAttribute="bottom" secondItem="1XW-QL-A8I" secondAttribute="bottom" id="GmG-RK-4Ze"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q2g-EV-irx" secondAttribute="bottom" id="L3T-fH-vO3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ppc-T0-iQe" secondAttribute="trailing" id="LyD-8P-FCu"/>
                             <constraint firstItem="1XW-QL-A8I" firstAttribute="top" secondItem="Ppc-T0-iQe" secondAttribute="bottom" id="Q7d-RW-kco"/>
@@ -203,10 +198,15 @@
                             <constraint firstAttribute="trailing" secondItem="q2g-EV-irx" secondAttribute="trailing" id="eEp-Uk-d0n"/>
                             <constraint firstItem="1XW-QL-A8I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gab-cr-XWf"/>
                             <constraint firstAttribute="trailing" secondItem="1XW-QL-A8I" secondAttribute="trailing" id="qQq-wz-15W"/>
-                            <constraint firstItem="Ppc-T0-iQe" firstAttribute="top" secondItem="EcN-aC-1CC" secondAttribute="bottom" id="qxe-IE-qyv"/>
-                            <constraint firstItem="EcN-aC-1CC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="t7R-8x-ojf"/>
+                            <constraint firstItem="Ppc-T0-iQe" firstAttribute="top" secondItem="EcN-aC-1CC" secondAttribute="bottom" constant="8" id="qxe-IE-qyv"/>
+                            <constraint firstItem="EcN-aC-1CC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t7R-8x-ojf"/>
                             <constraint firstItem="Ppc-T0-iQe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="0.66666666666665719" id="yHr-5F-zVU"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="q2g-EV-irx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
@@ -223,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.884057971014496" y="37.5"/>
+            <point key="canvasLocation" x="31.875" y="37.5"/>
         </scene>
         <!--Overlay-->
         <scene sceneID="AGL-Xt-QvN">
