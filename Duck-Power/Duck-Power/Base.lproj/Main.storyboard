@@ -202,11 +202,6 @@
                             <constraint firstItem="EcN-aC-1CC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t7R-8x-ojf"/>
                             <constraint firstItem="Ppc-T0-iQe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="0.66666666666665719" id="yHr-5F-zVU"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="q2g-EV-irx"/>
-                            </mask>
-                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
